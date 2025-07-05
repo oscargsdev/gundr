@@ -16,4 +16,3 @@ Discover underground music near you.
 ## Technical motivations
 - I want to learn Go, this project happens to be something that I really want to exists, so why not apply what I'm learning in the process of materializing it?
 - Want to put something public on _the internets_, trying to make a _real_ service is the only way to actually learn what it is necessary to do so.
-
