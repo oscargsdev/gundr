@@ -5,10 +5,13 @@ import (
 	"log/slog"
 	"net/http"
 	"os"
+
+	"github.com/oscargsdev/gundr/internal/models"
 )
 
 type application struct {
-	logger *slog.Logger
+	logger   *slog.Logger
+	projects *models.ProjectModel
 }
 
 func main() {
@@ -17,7 +20,8 @@ func main() {
 	logger := slog.New(slog.NewTextHandler(os.Stdout, nil))
 
 	app := &application{
-		logger: logger,
+		logger:   logger,
+		projects: &models.ProjectModel{},
 	}
 
 	logger.Info("starting server", "addr", *addr)
